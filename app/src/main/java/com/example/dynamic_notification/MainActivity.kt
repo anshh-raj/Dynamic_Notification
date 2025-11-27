@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
 
-            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.POST_NOTIFICATIONS), 200)
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.POST_NOTIFICATIONS), 200) //old way, see modern way in android cohort day 5
 
             Dynamic_NotificationTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
